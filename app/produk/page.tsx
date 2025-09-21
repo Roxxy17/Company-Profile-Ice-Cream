@@ -10,11 +10,13 @@ import Navbar from "@/components/navbar"
 import Footer from "@/components/footer"
 import ScrollAnimation from "@/components/scroll-animation"
 import FloatingBackground from "@/components/floating-background"
+import { useIsMobile } from "@/hooks/use-mobile"
 
 export default function ProdukPage() {
   const [selectedCategory, setSelectedCategory] = useState("Semua")
   const [searchTerm, setSearchTerm] = useState("")
-
+  const isMobile = useIsMobile();
+  if (isMobile === null) return null;
   const categories = ["Semua", "Klasik", "Premium", "Lokal", "Musiman"]
 
   const products = [
@@ -190,11 +192,10 @@ export default function ProdukPage() {
                         variant={selectedCategory === category ? "default" : "outline"}
                         size="sm"
                         onClick={() => setSelectedCategory(category)}
-                        className={`px-4 py-2 rounded-full transition-all duration-300 ${
-                          selectedCategory === category
+                        className={`px-4 py-2 rounded-full transition-all duration-300 ${selectedCategory === category
                             ? "bg-gradient-to-r from-emerald-500 to-teal-500 text-white hover-glow"
                             : "glass-premium border-emerald-200 text-emerald-700 hover:bg-emerald-50"
-                        }`}
+                          }`}
                       >
                         {category}
                       </Button>
@@ -202,7 +203,7 @@ export default function ProdukPage() {
                   ))}
                 </div>
               </div>
-            </div>
+            </div>  
           </div>
         </ScrollAnimation>
 
@@ -243,9 +244,8 @@ export default function ProdukPage() {
                             {[...Array(5)].map((_, i) => (
                               <Star
                                 key={i}
-                                className={`h-4 w-4 transition-colors duration-300 ${
-                                  i < Math.floor(product.rating) ? "text-yellow-400 fill-current" : "text-gray-300"
-                                }`}
+                                className={`h-4 w-4 transition-colors duration-300 ${i < Math.floor(product.rating) ? "text-yellow-400 fill-current" : "text-gray-300"
+                                  }`}
                               />
                             ))}
                           </div>
