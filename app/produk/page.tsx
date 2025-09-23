@@ -38,7 +38,7 @@ const products = [
     { id: 11, name: "Kacang Hijau", category: "Unik Nusantara", image: "/public/placeholder.jpg", description: "Kelezatan bubur kacang hijau yang diubah menjadi es krim lembut." },
     { id: 12, name: "Kopyor", category: "Unik Nusantara", image: "/public/placeholder.jpg", description: "Rasa gurih khas kelapa kopyor yang mewah dan istimewa." },
     { id: 13, name: "Teller", category: "Unik Nusantara", image: "/public/placeholder.jpg", description: "Inspirasi dari es teler, perpaduan buah yang menyegarkan." },
-    { id: 14, name: "Coklat + Alpukat", category: "Kombinasi Spesial", image: "/public/placeholder.jpg", description: "Duet sempurna antara pahitnya coklat dan lembutnya alpukat." },
+    { id: 14, name: "Coklat + Alpukat", category: "Kombinasi Spesial", image: "/public/avocado-ice-cream-green-creamy-healthy-indonesian.jpg", description: "Duet sempurna antara pahitnya coklat dan lembutnya alpukat." },
     { id: 15, name: "Kelapa Muda + Nangka", category: "Kombinasi Spesial", image: "/public/placeholder.jpg", description: "Kombinasi gurih kelapa muda dengan manisnya aroma nangka." },
 ]
 
