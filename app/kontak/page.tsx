@@ -42,39 +42,27 @@ export default function KontakPage() {
     },
     {
       icon: Phone,
-      title: "Telepon",
-      details: ["+62 21 1234 5678", "+62 812 3456 7890", "WhatsApp: +62 812 3456 7890"],
+      title: "Telepon & WhatsApp",
+      details: ["0817-262-116 (24 Jam)", "0877-3821-1522 (WhatsApp)"],
     },
     {
       icon: Mail,
       title: "Email",
-      details: ["info@frostydelight.com", "order@frostydelight.com", "support@frostydelight.com"],
+      details: ["info@kunaka.com"],
     },
     {
       icon: Clock,
       title: "Jam Operasional",
-      details: ["Senin - Jumat: 09:00 - 21:00", "Sabtu - Minggu: 08:00 - 22:00", "Hari Libur: 10:00 - 20:00"],
+      details: ["Setiap Hari: 24 Jam"],
     },
   ]
 
   const locations = [
     {
-      name: "FrostyDelight Jakarta Selatan",
+      name: "Kunaka Es Krim Puter Jakarta Selatan",
       address: "Jl. Manis Raya No. 123, Jakarta Selatan",
-      phone: "+62 21 1234 5678",
-      hours: "09:00 - 21:00",
-    },
-    {
-      name: "FrostyDelight Bandung",
-      address: "Jl. Dingin Sejuk No. 45, Bandung",
-      phone: "+62 22 8765 4321",
-      hours: "09:00 - 21:00",
-    },
-    {
-      name: "FrostyDelight Surabaya",
-      address: "Jl. Es Krim Lezat No. 67, Surabaya",
-      phone: "+62 31 9876 5432",
-      hours: "09:00 - 21:00",
+      phone: "0817-262-116",
+      hours: "24 Jam",
     },
   ]
 
@@ -89,7 +77,7 @@ export default function KontakPage() {
             Hubungi Kami
           </h1>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto animate-fade-in-up text-pretty">
-            Kami siap membantu Anda! Jangan ragu untuk menghubungi tim FrostyDelight kapan saja
+            Kami siap membantu Anda! Jangan ragu untuk menghubungi tim Kunaka Es Krim Puter kapan saja.
           </p>
         </div>
       </section>
@@ -175,7 +163,7 @@ export default function KontakPage() {
                           type="tel"
                           value={formData.phone}
                           onChange={handleInputChange}
-                          placeholder="+62 812 3456 7890"
+                          placeholder="0817-262-116"
                         />
                       </div>
                       <div>
@@ -243,7 +231,7 @@ export default function KontakPage() {
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-foreground mb-4 text-balance">Lokasi Toko Kami</h2>
             <p className="text-xl text-muted-foreground text-pretty">
-              Kunjungi toko FrostyDelight terdekat di kota Anda
+              Kunjungi toko Kunaka Es Krim Puter di Jakarta Selatan
             </p>
           </div>
 
@@ -296,14 +284,14 @@ export default function KontakPage() {
           <div className="space-y-6">
             {[
               {
-                question: "Apakah FrostyDelight melayani delivery?",
+                question: "Apakah Kunaka melayani delivery?",
                 answer:
-                  "Ya, kami melayani delivery ke seluruh area Jakarta, Bandung, dan Surabaya. Minimum order Rp 100.000 untuk free delivery.",
+                  "Ya, kami melayani delivery ke seluruh area Jakarta Selatan dan sekitarnya. Minimum order berlaku untuk free delivery.",
               },
               {
-                question: "Berapa lama es krim bisa bertahan di suhu ruang?",
+                question: "Berapa lama es krim puter bisa bertahan di suhu ruang?",
                 answer:
-                  "Es krim sebaiknya tidak dibiarkan di suhu ruang lebih dari 2 jam. Untuk kualitas terbaik, segera simpan di freezer.",
+                  "Es krim puter sebaiknya tidak dibiarkan di suhu ruang lebih dari 2 jam. Untuk kualitas terbaik, segera simpan di freezer.",
               },
               {
                 question: "Apakah ada varian es krim untuk penderita diabetes?",

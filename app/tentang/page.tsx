@@ -7,6 +7,7 @@ import Navbar from "@/components/navbar"
 import Footer from "@/components/footer"
 import ScrollAnimation from "@/components/scroll-animation"
 import FloatingBackground from "@/components/floating-background"
+import Link from "next/link"
 
 export default function TentangPage() {
   const values = [
@@ -14,63 +15,63 @@ export default function TentangPage() {
       icon: Heart,
       title: "Kualitas Terbaik",
       description:
-        "Kami berkomitmen menggunakan bahan-bahan premium dan proses produksi yang higienis untuk menghasilkan es krim berkualitas tinggi.",
+        "Kami selalu menggunakan bahan segar dan proses higienis untuk menghasilkan es krim puter premium.",
     },
     {
       icon: Leaf,
       title: "Bahan Alami",
       description:
-        "Semua produk kami dibuat dari bahan-bahan alami tanpa pengawet buatan, memberikan rasa yang autentik dan sehat.",
+        "Setiap varian dibuat dari bahan alami tanpa pengawet buatan, menghadirkan rasa autentik dan sehat.",
     },
     {
       icon: Users,
       title: "Kepuasan Pelanggan",
       description:
-        "Kepuasan pelanggan adalah prioritas utama kami. Setiap feedback berharga untuk terus meningkatkan kualitas produk.",
+        "Kepuasan Anda adalah prioritas kami. Kami terus mendengarkan masukan demi kualitas yang lebih baik.",
     },
     {
       icon: Award,
-      title: "Inovasi Berkelanjutan",
+      title: "Tradisi & Inovasi",
       description:
-        "Kami terus berinovasi menghadirkan varian rasa baru yang unik dan menarik untuk memanjakan lidah pelanggan.",
+        "Resep warisan keluarga dipadukan inovasi rasa baru untuk memeriahkan setiap acara spesial Anda.",
     },
   ]
 
   const timeline = [
     {
       year: "2010",
-      title: "Awal Mula",
+      title: "Awal Tradisi",
       description:
-        "FrostyDelight dimulai dari dapur kecil dengan resep rahasia keluarga dan tekad untuk menghadirkan es krim berkualitas.",
+        "Kunaka Es Krim Puter lahir dari tradisi keluarga yang selalu menghadirkan es krim puter di acara pernikahan.",
     },
     {
       year: "2013",
-      title: "Toko Pertama",
+      title: "Mulai Melayani Acara",
       description:
-        "Membuka toko pertama di Jakarta Selatan dan mulai melayani pelanggan dengan berbagai varian rasa unik.",
+        "Mulai dipercaya untuk memeriahkan berbagai acara, terutama pernikahan dan keluarga di Jakarta.",
     },
     {
       year: "2016",
-      title: "Ekspansi Regional",
+      title: "Ekspansi & Varian Baru",
       description:
-        "Memperluas jangkauan ke berbagai kota di Indonesia dan memperkenalkan rasa-rasa lokal yang autentik.",
+        "Menambah varian rasa unik khas Indonesia dan memperluas layanan ke kota-kota lain.",
     },
     {
       year: "2019",
-      title: "Penghargaan Pertama",
-      description: "Meraih penghargaan 'Best Ice Cream Brand' dari Indonesian Food & Beverage Awards.",
+      title: "Pengakuan & Penghargaan",
+      description: "Dikenal sebagai es krim puter favorit untuk acara pernikahan dan keluarga.",
     },
     {
       year: "2022",
-      title: "Go Digital",
+      title: "Digital & Delivery",
       description:
-        "Meluncurkan platform online dan layanan delivery untuk menjangkau lebih banyak pelanggan di seluruh Indonesia.",
+        "Layanan online dan pengantaran 24 jam untuk memudahkan pelanggan menikmati es krim kapan saja.",
     },
     {
       year: "2024",
-      title: "Masa Depan",
+      title: "Masa Kini",
       description:
-        "Terus berinovasi dengan teknologi terbaru dan berkomitmen menjadi brand es krim terdepan di Asia Tenggara.",
+        "Kunaka terus berinovasi dan menjadi bagian dari momen bahagia ribuan keluarga Indonesia.",
     },
   ]
 
@@ -85,24 +86,28 @@ export default function TentangPage() {
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
               <ScrollAnimation>
                 <h1 className="text-4xl md:text-6xl font-bold text-gradient mb-8 text-balance">
-                  Tentang FrostyDelight
+                  Tentang Kunaka Es Krim Puter
                 </h1>
                 <p className="text-xl text-slate-600 mb-10 leading-relaxed text-pretty">
-                  Perjalanan kami dimulai dari kecintaan terhadap es krim berkualitas tinggi dan keinginan untuk
-                  menghadirkan kebahagiaan melalui setiap scoop yang kami sajikan.
+                  Berawal dari tradisi keluarga, Kunaka Es Krim Puter kini menjadi pilihan utama untuk memeriahkan acara pernikahan dan momen spesial. Kami percaya, kebahagiaan bisa hadir lewat kelezatan es krim puter yang otentik dan penuh kenangan.
                 </p>
-                <Button className="bg-gradient-to-r from-emerald-500 to-teal-500 hover:from-emerald-600 hover:to-teal-600 text-white border-0 px-8 py-4 text-lg hover-glow">
-                  Hubungi Kami
-                  <ArrowRight className="ml-2 h-6 w-6" />
+                <Button
+                  asChild
+                  className="bg-gradient-to-r from-emerald-500 to-teal-500 hover:from-emerald-600 hover:to-teal-600 text-white border-0 px-8 py-4 text-lg hover-glow"
+                >
+                  <Link href="/kontak" className="flex items-center gap-2">
+                    Hubungi Kami
+                    <ArrowRight className="h-6 w-6" />
+                  </Link>
                 </Button>
               </ScrollAnimation>
               <ScrollAnimation>
                 <div className="relative">
                   <div className="glass-card rounded-3xl p-4 animate-float">
                     <img
-                      src="/placeholder.svg?height=500&width=600"
-                      alt="FrostyDelight Story"
-                      className="w-full h-auto rounded-2xl"
+                      src="/logo.png"
+                      alt="Kunaka Story"
+                      className="w-full h-auto rounded-2xl bg-white object-contain"
                     />
                   </div>
                   <div className="absolute -top-6 -right-6 w-24 h-24 bg-gradient-to-br from-emerald-400 to-teal-400 rounded-full animate-pulse-slow opacity-20"></div>
@@ -124,9 +129,7 @@ export default function TentangPage() {
                   <CardContent className="p-10">
                     <h2 className="text-3xl font-bold text-gradient mb-6">Misi Kami</h2>
                     <p className="text-slate-600 leading-relaxed text-lg">
-                      Menghadirkan es krim berkualitas premium dengan cita rasa autentik Indonesia yang dapat dinikmati
-                      oleh seluruh keluarga. Kami berkomitmen untuk terus berinovasi dan memberikan pengalaman yang tak
-                      terlupakan melalui setiap produk yang kami sajikan.
+                      Menghadirkan es krim puter berkualitas premium dengan cita rasa khas Indonesia untuk setiap acara bahagia. Kami berkomitmen menjaga tradisi dan terus berinovasi demi pengalaman terbaik bagi pelanggan.
                     </p>
                   </CardContent>
                 </Card>
@@ -137,9 +140,7 @@ export default function TentangPage() {
                   <CardContent className="p-10">
                     <h2 className="text-3xl font-bold text-gradient mb-6">Visi Kami</h2>
                     <p className="text-slate-600 leading-relaxed text-lg">
-                      Menjadi brand es krim terdepan di Asia Tenggara yang dikenal karena kualitas premium, inovasi
-                      berkelanjutan, dan komitmen terhadap kepuasan pelanggan. Kami ingin menjadi bagian dari momen
-                      bahagia setiap keluarga Indonesia.
+                      Menjadi brand es krim puter terdepan di Indonesia yang selalu hadir di setiap momen bahagia keluarga, terutama acara pernikahan dan perayaan spesial lainnya.
                     </p>
                   </CardContent>
                 </Card>
@@ -153,7 +154,7 @@ export default function TentangPage() {
             <ScrollAnimation className="text-center mb-20">
               <h2 className="text-4xl md:text-5xl font-bold text-gradient mb-6 text-balance">Nilai-Nilai Kami</h2>
               <p className="text-xl text-slate-600 max-w-3xl mx-auto text-pretty leading-relaxed">
-                Prinsip-prinsip yang menjadi fondasi dalam setiap langkah perjalanan FrostyDelight
+                Prinsip yang menjadi fondasi Kunaka Es Krim Puter dalam setiap langkah dan inovasi.
               </p>
             </ScrollAnimation>
 
@@ -180,7 +181,7 @@ export default function TentangPage() {
             <ScrollAnimation className="text-center mb-20">
               <h2 className="text-4xl md:text-5xl font-bold text-gradient mb-6 text-balance">Perjalanan Kami</h2>
               <p className="text-xl text-slate-600 text-pretty leading-relaxed">
-                Dari dapur kecil hingga menjadi brand es krim terpercaya di Indonesia
+                Dari tradisi keluarga hingga menjadi brand es krim puter pilihan untuk acara pernikahan di Indonesia.
               </p>
             </ScrollAnimation>
 
