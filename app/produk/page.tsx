@@ -25,22 +25,31 @@ export default function ProdukPage() {
 	]
 
 const products = [
-    { id: 1, name: "Vanila", category: "Klasik", image: "/public/premium-vanilla-ice-cream-scoops-with-fresh-vanill.jpg", description: "Rasa vanila yang lembut dan otentik, disukai semua kalangan." },
-    { id: 2, name: "Coklat", category: "Klasik", image: "/public/rich-belgian-chocolate-ice-cream-dark-cocoa-beans-.jpg", description: "Kelezatan cokelat premium yang pekat dan memanjakan lidah." },
-    { id: 3, name: "Strawberry", category: "Buah Tropis", image: "/public/fresh-strawberry-ice-cream-with-real-strawberry-pi.jpg", description: "Kesegaran buah stroberi asli dengan sedikit rasa manis yang pas." },
-    { id: 4, name: "Durian", category: "Buah Tropis", image: "/public/creamy-durian-ice-cream-golden-color-tropical-frui.jpg", description: "Rasa otentik dari raja buah, durian pilihan dengan aroma kuat." },
-    { id: 5, name: "Alpukat", category: "Buah Tropis", image: "/public/avocado-ice-cream-green-creamy-healthy-indonesian.jpg", description: "Tekstur lembut dan creamy dari buah alpukat mentega terbaik." },
-    { id: 6, name: "Nanas", category: "Buah Tropis", image: "/public/mango-ice-cream-tropical-orange-fresh-fruit.jpg", description: "Sensasi segar dan tropis dari buah nanas pilihan." },
-    { id: 7, name: "Nangka", category: "Buah Tropis", image: "/public/colorful-indonesian-ice-cream-flavors-durian-match.jpg", description: "Aroma khas dan manis dari potongan buah nangka matang." },
-    { id: 8, name: "Sirsak", category: "Buah Tropis", image: "/public/placeholder.jpg", description: "Kombinasi rasa manis dan asam yang menyegarkan dari buah sirsak." },
-    { id: 9, name: "Melon", category: "Buah Tropis", image: "/public/placeholder.jpg", description: "Rasa manis dan menyegarkan dari sari buah melon pilihan." },
-    { id: 10, name: "Tape Ketan", category: "Unik Nusantara", image: "/public/placeholder.jpg", description: "Rasa manis legit dari fermentasi tape ketan tradisional." },
-    { id: 11, name: "Kacang Hijau", category: "Unik Nusantara", image: "/public/placeholder.jpg", description: "Kelezatan bubur kacang hijau yang diubah menjadi es krim lembut." },
-    { id: 12, name: "Kopyor", category: "Unik Nusantara", image: "/public/placeholder.jpg", description: "Rasa gurih khas kelapa kopyor yang mewah dan istimewa." },
-    { id: 13, name: "Teller", category: "Unik Nusantara", image: "/public/placeholder.jpg", description: "Inspirasi dari es teler, perpaduan buah yang menyegarkan." },
-    { id: 14, name: "Coklat + Alpukat", category: "Kombinasi Spesial", image: "/public/avocado-ice-cream-green-creamy-healthy-indonesian.jpg", description: "Duet sempurna antara pahitnya coklat dan lembutnya alpukat." },
-    { id: 15, name: "Kelapa Muda + Nangka", category: "Kombinasi Spesial", image: "/public/placeholder.jpg", description: "Kombinasi gurih kelapa muda dengan manisnya aroma nangka." },
-]
+    { id: 1, name: "Vanila", category: "Klasik", image: "/premium-vanilla-ice-cream-scoops-with-fresh-vanill.jpg", description: "Rasa vanila yang lembut dan otentik, disukai semua kalangan." },
+    { id: 2, name: "Coklat", category: "Klasik", image: "/rich-belgian-chocolate-ice-cream-dark-cocoa-beans-.jpg", description: "Kelezatan cokelat premium yang pekat dan memanjakan lidah." },
+    { id: 3, name: "Strawberry", category: "Buah Tropis", image: "/fresh-strawberry-ice-cream-with-real-strawberry-pi.jpg", description: "Kesegaran buah stroberi asli dengan sedikit rasa manis yang pas." },
+    { id: 4, name: "Durian", category: "Buah Tropis", image: "/creamy-durian-ice-cream-golden-color-tropical-frui.jpg", description: "Rasa otentik dari raja buah, durian pilihan dengan aroma kuat." },
+    { id: 5, name: "Alpukat", category: "Buah Tropis", image: "/avocado-ice-cream-green-creamy-healthy-indonesian.jpg", description: "Tekstur lembut dan creamy dari buah alpukat mentega terbaik." },
+    { id: 6, name: "Nanas", category: "Buah Tropis", image: "/traditional-flavors.jpg", description: "Sensasi segar dan tropis dari buah nanas pilihan." },
+    { id: 7, name: "Nangka", category: "Buah Tropis", image: "/eskrim-nangka.png", description: "Aroma khas dan manis dari potongan buah nangka matang." },
+    { id: 8, name: "Sirsak", category: "Buah Tropis", image: "/pandan-ice-cream-green-natural-indonesian-flavor.jpg", description: "Kombinasi rasa manis dan asam yang menyegarkan dari buah sirsak." },
+    { id: 9, name: "Melon", category: "Buah Tropis", image: "/eskrim-melon.png", description: "Rasa manis dan menyegarkan dari sari buah melon pilihan." },
+    { id: 10, name: "Tape Ketan", category: "Unik Nusantara", image: "/eskrim-tape.png", description: "Rasa manis legit dari fermentasi tape ketan tradisional." },
+    { id: 11, name: "Kacang Hijau", category: "Unik Nusantara", image: "/eskrim-kacanghijau.png", description: "Kelezatan bubur kacang hijau yang diubah menjadi es krim lembut." },
+    { id: 12, name: "Kopyor", category: "Unik Nusantara", image: "/eskrim-kopyor.png", description: "Rasa gurih khas kelapa kopyor yang mewah dan istimewa." },
+    { id: 13, name: "Teller", category: "Unik Nusantara", image: "/eskrim-teller.png", description: "Inspirasi dari es teler, perpaduan buah yang menyegarkan." },
+    { id: 14, name: "Mocca", category: "Klasik", image: "/eskrim-mocca.png", description: "Paduan kopi dan cokelat yang kaya, memberikan sensasi hangat." },
+    { id: 15, name: "Mutiara", category: "Unik Nusantara", image: "/eskrim-mutiara.png", description: "Manis dan unik, dengan tekstur kenyal seperti mutiara." },
+    { id: 16, name: "Roti", category: "Klasik", image: "/eskrim-roti.png", description: "Rasa roti tawar yang lembut, cocok untuk nostalgia." },
+    { id: 17, name: "Blewah", category: "Buah Tropis", image: "/eskrim-blewah.png", description: "Kesegaran buah blewah yang manis dan beraroma." },
+    { id: 18, name: "Tape Ketan Hitam", category: "Unik Nusantara", image: "/eskrim-tapeketanhitam.png", description: "Variasi tape ketan dengan warna gelap dan rasa khas." },
+    { id: 19, name: "Kelapa Muda", category: "Unik Nusantara", image: "/eskrim-kelapamuda.png", description: "Rasa alami dan segar dari kelapa muda asli." },
+    { id: 20, name: "Kelapa Muda + Nangka", category: "Buah Tropis", image: "/eskrim-kelapamudanangka.png", description: "Kombinasi kelapa muda dan nangka yang harmonis." },
+    { id: 21, name: "Cocktail", category: "Buah Tropis", image: "/eskrim-cocktail.png", description: "Perpaduan berbagai buah tropis dalam satu sajian." },
+    { id: 22, name: "Lechi", category: "Buah Tropis", image: "/eskrim-leechi.png", description: "Rasa manis dan sedikit asam dari buah leci yang menyegarkan." },
+    { id: 23, name: "Coklat + Alpukat", category: "Klasik", image: "/eskrim-coklatalpukat.png", description: "Kombinasi klasik cokelat dengan lembutnya alpukat." },
+    { id: 24, name: "Kelapa Muda + Kolang-Kaling", category: "Unik Nusantara", image: "/eskrim-kelapamudakolangkaling.png", description: "Perpaduan kelapa muda dengan tekstur kenyal kolang-kaling." }
+];
 
 	const filteredProducts = products.filter((product) => {
 		const matchesCategory = selectedCategory === "Semua" || product.category === selectedCategory

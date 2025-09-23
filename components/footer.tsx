@@ -21,14 +21,15 @@ export default function Footer() {
           <div className="space-y-6">
             <div className="flex items-center space-x-3">
               <div className="relative">
-                <div className="absolute inset-0 bg-gradient-to-r from-emerald-400 to-teal-500 rounded-2xl blur-sm opacity-75"></div>
-                <div className="relative bg-gradient-to-r from-emerald-500 to-teal-600 p-3 rounded-2xl">
-                  <IceCream className="h-7 w-7 text-white" />
-                </div>
+                <img
+                  src="/logo.png"
+                  alt="Logo"
+                  className="h-10 w-10 rounded-2xl shadow-lg border-2 border-emerald-400 bg-white object-contain"
+                />
               </div>
               <div>
                 <span className="text-2xl font-bold bg-gradient-to-r from-emerald-400 to-teal-400 bg-clip-text text-transparent">
-                  FrostyDelight
+                  Kunaka
                 </span>
                 <div className="flex items-center space-x-1 mt-1">
                   {[...Array(5)].map((_, i) => (

@@ -35,16 +35,17 @@ export default function Navbar() {
         <div className="flex justify-between items-center h-20">
           <Link href="/" className="flex items-center space-x-3 group">
             <div className="relative">
-              <div className="absolute inset-0 bg-gradient-to-r from-emerald-400 to-teal-500 rounded-2xl blur-sm opacity-75 group-hover:opacity-100 transition-opacity duration-300"></div>
-              <div className="relative bg-gradient-to-r from-emerald-500 to-teal-600 p-3 rounded-2xl group-hover:scale-110 transition-transform duration-300">
-                <IceCream className="h-7 w-7 text-white" />
-              </div>
+              <img
+                src="/logo.png"
+                alt="Logo"
+                className="h-10 w-10 rounded-2xl shadow-lg border-2 border-emerald-400 bg-white object-contain transition-transform duration-300 group-hover:scale-110"
+              />
             </div>
             <div className="flex flex-col">
               <span className="text-2xl font-bold bg-gradient-to-r from-emerald-600 to-teal-600 bg-clip-text text-transparent">
-                FrostyDelight
+                Kunaka
               </span>
-              <span className="text-xs text-gray-500 -mt-1">Premium Ice Cream</span>
+              <span className="text-xs text-gray-500 -mt-1">Beragam Rasa Es Krim Puter</span>
             </div>
           </Link>
 
