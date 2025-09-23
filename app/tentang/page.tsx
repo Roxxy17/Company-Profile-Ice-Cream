@@ -209,54 +209,6 @@ export default function TentangPage() {
           </div>
         </ScrollAnimation>
 
-        <ScrollAnimation className="py-32 bg-gradient-to-br from-emerald-50/30 to-teal-50/30 relative">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <ScrollAnimation className="text-center mb-20">
-              <h2 className="text-4xl md:text-5xl font-bold text-gradient mb-6 text-balance">Tim Kami</h2>
-              <p className="text-xl text-slate-600 max-w-3xl mx-auto text-pretty leading-relaxed">
-                Orang-orang hebat di balik kelezatan setiap scoop FrostyDelight
-              </p>
-            </ScrollAnimation>
-
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
-              {[
-                {
-                  name: "Budi Santoso",
-                  role: "Founder & CEO",
-                  image: "/placeholder.svg?height=300&width=300",
-                },
-                {
-                  name: "Sari Dewi",
-                  role: "Head of Production",
-                  image: "/placeholder.svg?height=300&width=300",
-                },
-                {
-                  name: "Ahmad Rahman",
-                  role: "Quality Control Manager",
-                  image: "/placeholder.svg?height=300&width=300",
-                },
-              ].map((member, index) => (
-                <ScrollAnimation key={index} threshold={0.3}>
-                  <Card className="text-center glass-card hover-glow border-0">
-                    <CardContent className="p-8">
-                      <div className="relative mb-6">
-                        <img
-                          src={member.image || "/placeholder.svg"}
-                          alt={member.name}
-                          className="w-40 h-40 rounded-2xl mx-auto object-cover shadow-lg"
-                        />
-                        <div className="absolute -bottom-2 -right-2 w-8 h-8 bg-gradient-to-br from-emerald-500 to-teal-500 rounded-full"></div>
-                      </div>
-                      <h3 className="text-2xl font-bold text-slate-800 mb-2">{member.name}</h3>
-                      <p className="text-emerald-600 font-medium text-lg">{member.role}</p>
-                    </CardContent>
-                  </Card>
-                </ScrollAnimation>
-              ))}
-            </div>
-          </div>
-        </ScrollAnimation>
-
         <Footer />
       </div>
     </div>

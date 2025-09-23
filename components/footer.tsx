@@ -40,8 +40,7 @@ export default function Footer() {
               </div>
             </div>
             <p className="text-gray-300 text-sm leading-relaxed">
-              Menyajikan es krim premium dengan cita rasa autentik Indonesia sejak 2010. Dibuat dengan bahan-bahan
-              berkualitas tinggi dan resep rahasia keluarga yang telah dipercaya ribuan pelanggan.
+              Es krim puter premium untuk acara spesial Anda. Resep warisan, rasa autentik, dan layanan ramah setiap hari.
             </p>
 
             <div className="flex space-x-4">
@@ -64,14 +63,19 @@ export default function Footer() {
           <div>
             <h3 className="font-bold text-white mb-6 text-lg">Tautan Cepat</h3>
             <ul className="space-y-3">
-              {["Beranda", "Produk", "Tentang Kami", "Galeri", "Kontak"].map((item) => (
-                <li key={item}>
+              {[
+                { name: "Beranda", href: "/" },
+                { name: "Produk", href: "/produk" },
+                { name: "Tentang Kami", href: "/tentang" },
+                { name: "Kontak", href: "/kontak" },
+              ].map((item) => (
+                <li key={item.name}>
                   <Link
-                    href="#"
+                    href={item.href}
                     className="text-gray-300 hover:text-emerald-400 transition-colors text-sm flex items-center group"
                   >
                     <span className="w-0 group-hover:w-2 h-0.5 bg-emerald-400 transition-all duration-300 mr-0 group-hover:mr-2 rounded-full"></span>
-                    {item}
+                    {item.name}
                   </Link>
                 </li>
               ))}
@@ -82,20 +86,16 @@ export default function Footer() {
             <h3 className="font-bold text-white mb-6 text-lg">Produk Populer</h3>
             <ul className="space-y-3">
               {[
-                { name: "Es Krim Vanilla Premium", price: "Rp 25.000" },
-                { name: "Es Krim Cokelat Belgia", price: "Rp 30.000" },
-                { name: "Es Krim Strawberry Fresh", price: "Rp 28.000" },
-                { name: "Es Krim Durian Medan", price: "Rp 35.000" },
-                { name: "Es Krim Teh Hijau Matcha", price: "Rp 32.000" },
-              ].map((item) => (
-                <li key={item.name}>
-                  <Link
-                    href="#"
-                    className="text-gray-300 hover:text-emerald-400 transition-colors text-sm group flex justify-between items-center"
-                  >
-                    <span className="group-hover:translate-x-1 transition-transform duration-300">{item.name}</span>
-                    <span className="text-emerald-400 font-medium">{item.price}</span>
-                  </Link>
+                "Es Krim Vanilla Premium",
+                "Es Krim Cokelat Belgia",
+                "Es Krim Strawberry Fresh",
+                "Es Krim Durian Medan",
+                "Es Krim Teh Hijau Matcha",
+              ].map((name) => (
+                <li key={name}>
+                  <span className="text-gray-300 hover:text-emerald-400 transition-colors text-sm group flex items-center">
+                    <span className="group-hover:translate-x-1 transition-transform duration-300">{name}</span>
+                  </span>
                 </li>
               ))}
             </ul>
@@ -105,9 +105,9 @@ export default function Footer() {
             <h3 className="font-bold text-white mb-6 text-lg">Kontak Kami</h3>
             <div className="space-y-4">
               {[
-                { icon: MapPin, text: "Jl. Manis Raya No. 123, Jakarta Selatan 12560", color: "text-emerald-400" },
-                { icon: Phone, text: "+62 21 1234 5678", color: "text-teal-400" },
-                { icon: Mail, text: "info@frostydelight.com", color: "text-emerald-400" },
+                { icon: MapPin, text: "Ngipik, Baturetno, Banguntapan, Bantul", color: "text-emerald-400" },
+                { icon: Phone, text: "0877-3821-1522", color: "text-teal-400" },
+                { icon: Mail, text: "kunakaeskrim@gmail.com", color: "text-emerald-400" },
               ].map(({ icon: Icon, text, color }, index) => (
                 <div key={index} className="flex items-start space-x-3 group">
                   <Icon
@@ -124,12 +124,8 @@ export default function Footer() {
               <h4 className="font-semibold text-emerald-400 mb-2">Jam Operasional</h4>
               <div className="text-sm text-gray-300 space-y-1">
                 <div className="flex justify-between">
-                  <span>Senin - Jumat</span>
-                  <span>09:00 - 22:00</span>
-                </div>
-                <div className="flex justify-between">
-                  <span>Sabtu - Minggu</span>
-                  <span>08:00 - 23:00</span>
+                  <span>Setiap Hari</span>
+                  <span>24 Jam</span>
                 </div>
               </div>
             </div>
@@ -139,7 +135,7 @@ export default function Footer() {
         <div className="border-t border-white/10 mt-12 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <div className="flex items-center space-x-2 text-gray-400 text-sm">
-              <span>© 2024 FrostyDelight. Semua hak cipta dilindungi.</span>
+              <span>© 2024 Kunaka. Semua hak cipta dilindungi. Love From Kal</span>
               <Heart className="h-4 w-4 text-red-400 animate-pulse" />
             </div>
             <div className="flex items-center space-x-6 text-sm text-gray-400">

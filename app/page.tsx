@@ -9,13 +9,14 @@ import Navbar from "@/components/navbar"
 import Footer from "@/components/footer"
 import ScrollAnimation from "@/components/scroll-animation"
 import FloatingBackground from "@/components/floating-background"
+import Link from "next/link"
 
 export default function HomePage() {
   const [currentSlide, setCurrentSlide] = useState(0)
 
   const heroSlides = [
     {
-      title: "Es Krim Premium Rasa Autentik",
+      title: "Es Krim Puter Rasa Autentik",
       subtitle: "Nikmati kelezatan es krim terbaik dengan bahan-bahan pilihan",
       image: "/premium-vanilla-ice-cream-scoops-with-fresh-vanill.jpg",
     },
@@ -83,9 +84,8 @@ export default function HomePage() {
           {heroSlides.map((slide, index) => (
             <div
               key={index}
-              className={`absolute inset-0 transition-all duration-1000 ${
-                index === currentSlide ? "opacity-100 scale-100" : "opacity-0 scale-105"
-              }`}
+              className={`absolute inset-0 transition-all duration-1000 ${index === currentSlide ? "opacity-100 scale-100" : "opacity-0 scale-105"
+                }`}
             >
               <img src={slide.image || "/placeholder.svg"} alt={slide.title} className="w-full h-full object-cover" />
               <div className="absolute inset-0 bg-gradient-to-br from-black/50 via-black/30 to-transparent"></div>
@@ -103,9 +103,11 @@ export default function HomePage() {
               <div className="flex flex-col sm:flex-row gap-6 justify-center">
                 <Button
                   size="lg"
-                  className="bg-gradient-to-r from-emerald-500 to-teal-500 hover:from-emerald-600 hover:to-teal-600 text-white border-0 px-8 py-4 text-lg hover-glow"
+                  className="bg-gradient-to-r from-emerald-500 to-teal-500 hover:from-emerald-600 hover:to-teal-600 text-white border-0 px-8 py-4 text-lg hover-glow "
                 >
-                  Jelajahi Produk
+                  <Link href="/produk">
+                    Jelajahi Produk
+                  </Link>
                   <ArrowRight className="ml-2 h-6 w-6" />
                 </Button>
                 <Button
@@ -113,7 +115,10 @@ export default function HomePage() {
                   variant="outline"
                   className="glass-premium border-white/30 text-white hover:bg-white/20 px-8 py-4 text-lg bg-transparent"
                 >
-                  Pelajari Lebih Lanjut
+                  <Link href="/tentang" className="flex items-center justify-center gap-2 z-10">
+                    <span className="underline">Pelajari Lebih Lanjut</span>
+                    <ArrowRight className="h-6 w-6" />
+                  </Link>
                 </Button>
               </div>
             </ScrollAnimation>
@@ -124,9 +129,8 @@ export default function HomePage() {
               <button
                 key={index}
                 onClick={() => setCurrentSlide(index)}
-                className={`w-4 h-4 rounded-full transition-all duration-500 ${
-                  index === currentSlide ? "bg-white scale-125" : "bg-white/50 hover:bg-white/75"
-                }`}
+                className={`w-4 h-4 rounded-full transition-all duration-500 ${index === currentSlide ? "bg-white scale-125" : "bg-white/50 hover:bg-white/75"
+                  }`}
               />
             ))}
           </div>
@@ -187,16 +191,15 @@ export default function HomePage() {
                             {[...Array(5)].map((_, i) => (
                               <Star
                                 key={i}
-                                className={`h-5 w-5 ${
-                                  i < Math.floor(product.rating) ? "text-yellow-400 fill-current" : "text-gray-300"
-                                }`}
+                                className={`h-5 w-5 ${i < Math.floor(product.rating) ? "text-yellow-400 fill-current" : "text-gray-300"
+                                  }`}
                               />
                             ))}
                           </div>
                           <span className="ml-3 text-slate-600 font-medium">({product.rating})</span>
                         </div>
                         <div className="flex items-center justify-between">
-                          <span className="text-3xl font-bold text-gradient">{product.price}</span>
+                          {/* <span className="text-3xl font-bold text-gradient">{product.price}</span> */}
                           <Button className="bg-gradient-to-r from-emerald-500 to-teal-500 hover:from-emerald-600 hover:to-teal-600 text-white border-0 px-6 py-3">
                             Pesan
                           </Button>
@@ -212,9 +215,11 @@ export default function HomePage() {
               <Button
                 variant="outline"
                 size="lg"
-                className="glass-premium border-emerald-200 text-emerald-700 hover:bg-emerald-50 px-8 py-4 text-lg bg-transparent"
+                className="glass-premium border-emerald-200 text-emerald-700 hover:bg-emerald-50 hover:text-black px-8 py-4 text-lg bg-transparent"
               >
-                Lihat Semua Produk
+                <Link href="/produk">
+                  Lihat Semua Produk
+                </Link>
                 <ArrowRight className="ml-2 h-6 w-6" />
               </Button>
             </ScrollAnimation>
@@ -226,20 +231,22 @@ export default function HomePage() {
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
               <ScrollAnimation className="order-2 lg:order-1" animationType="slide-right">
                 <h2 className="text-4xl md:text-5xl font-bold text-gradient mb-8 text-balance">
-                  Cerita di Balik FrostyDelight
+                  Cerita di Balik Kunaka Es Krim Puter
                 </h2>
                 <p className="text-xl text-slate-600 mb-8 leading-relaxed">
-                  Dimulai dari dapur kecil pada tahun 2010, FrostyDelight kini telah menjadi merek es krim terpercaya di
-                  Indonesia. Kami berkomitmen menghadirkan es krim berkualitas premium dengan cita rasa autentik yang
-                  tak terlupakan.
+                  Kunaka Es Krim Puter berawal dari tradisi keluarga yang selalu menghadirkan es krim puter di setiap acara pernikahan. Kelezatan dan keunikan rasa es krim puter menjadi simbol kebahagiaan dan kehangatan di momen istimewa.
                 </p>
                 <p className="text-xl text-slate-600 mb-10 leading-relaxed">
-                  Setiap scoop es krim kami dibuat dengan bahan-bahan pilihan terbaik dan resep rahasia keluarga yang
-                  telah diwariskan turun-temurun.
+                  Kini, Kunaka hadir untuk memeriahkan hari bahagia Anda dengan es krim puter premium, dibuat dari bahan-bahan pilihan dan resep warisan yang telah dipercaya puluhan pasangan pengantin di berbagai kota.
                 </p>
-                <Button className="bg-gradient-to-r from-emerald-500 to-teal-500 hover:from-emerald-600 hover:to-teal-600 text-white border-0 px-8 py-4 text-lg hover-glow">
-                  Pelajari Lebih Lanjut
-                  <ArrowRight className="ml-2 h-6 w-6" />
+                <Button
+                  asChild
+                  className="bg-gradient-to-r from-emerald-500 to-teal-500 hover:from-emerald-600 hover:to-teal-600 text-white border-0 px-8 py-4 text-lg hover-glow z-20"
+                >
+                  <Link href="/tentang" className="flex items-center justify-center gap-2 z-10">
+                    <span className="underline">Pelajari Lebih Lanjut</span>
+                    <ArrowRight className="h-6 w-6" />
+                  </Link>
                 </Button>
               </ScrollAnimation>
               <ScrollAnimation className="order-1 lg:order-2" animationType="slide-left">
