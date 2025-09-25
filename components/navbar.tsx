@@ -42,7 +42,7 @@ export default function Navbar() {
             </div>
             <div className="flex flex-col">
               <span className="text-2xl font-bold bg-gradient-to-r from-emerald-600 to-teal-600 bg-clip-text text-transparent">
-                Kunaka
+                Es Puter Mulyo Langgeng
               </span>
               <span className="text-xs text-gray-500 -mt-1">Beragam Rasa Es Krim Puter</span>
             </div>

@@ -42,7 +42,7 @@ export default function TentangPage() {
       year: "2010",
       title: "Awal Tradisi",
       description:
-        "Kunaka Es Krim Puter lahir dari tradisi keluarga yang selalu menghadirkan es krim puter di acara pernikahan.",
+        "Es Puter Mulyo Langgeng Es Krim Puter lahir dari tradisi keluarga yang selalu menghadirkan es krim puter di acara pernikahan.",
     },
     {
       year: "2013",
@@ -71,7 +71,7 @@ export default function TentangPage() {
       year: "2024",
       title: "Masa Kini",
       description:
-        "Kunaka terus berinovasi dan menjadi bagian dari momen bahagia ribuan keluarga Indonesia.",
+        "Es Puter Mulyo Langgeng terus berinovasi dan menjadi bagian dari momen bahagia ribuan keluarga Indonesia.",
     },
   ]
 
@@ -86,10 +86,10 @@ export default function TentangPage() {
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
               <ScrollAnimation>
                 <h1 className="text-4xl md:text-6xl font-bold text-gradient mb-8 text-balance">
-                  Tentang Kunaka Es Krim Puter
+                  Tentang Es Puter Mulyo Langgeng Es Krim Puter
                 </h1>
                 <p className="text-xl text-slate-600 mb-10 leading-relaxed text-pretty">
-                  Berawal dari tradisi keluarga, Kunaka Es Krim Puter kini menjadi pilihan utama untuk memeriahkan acara pernikahan dan momen spesial. Kami percaya, kebahagiaan bisa hadir lewat kelezatan es krim puter yang otentik dan penuh kenangan.
+                  Berawal dari tradisi keluarga, Es Puter Mulyo Langgeng Es Krim Puter kini menjadi pilihan utama untuk memeriahkan acara pernikahan dan momen spesial. Kami percaya, kebahagiaan bisa hadir lewat kelezatan es krim puter yang otentik dan penuh kenangan.
                 </p>
                 <Button
                   asChild
@@ -106,7 +106,7 @@ export default function TentangPage() {
                   <div className="glass-card rounded-3xl p-4 animate-float">
                     <img
                       src="/logo.png"
-                      alt="Kunaka Story"
+                      alt="Es Puter Mulyo Langgeng Story"
                       className="w-full h-auto rounded-2xl bg-white object-contain"
                     />
                   </div>
@@ -154,7 +154,7 @@ export default function TentangPage() {
             <ScrollAnimation className="text-center mb-20">
               <h2 className="text-4xl md:text-5xl font-bold text-gradient mb-6 text-balance">Nilai-Nilai Kami</h2>
               <p className="text-xl text-slate-600 max-w-3xl mx-auto text-pretty leading-relaxed">
-                Prinsip yang menjadi fondasi Kunaka Es Krim Puter dalam setiap langkah dan inovasi.
+                Prinsip yang menjadi fondasi Es Puter Mulyo Langgeng Es Krim Puter dalam setiap langkah dan inovasi.
               </p>
             </ScrollAnimation>
 

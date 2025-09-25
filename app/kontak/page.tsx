@@ -48,7 +48,7 @@ export default function KontakPage() {
     {
       icon: Mail,
       title: "Email",
-      details: ["info@kunaka.com"],
+      details: ["info@Es Puter Mulyo Langgeng.com"],
     },
     {
       icon: Clock,
@@ -59,7 +59,7 @@ export default function KontakPage() {
 
   const locations = [
     {
-      name: "Kunaka Es Krim Puter Jakarta Selatan",
+      name: "Es Puter Mulyo Langgeng Es Krim Puter Jakarta Selatan",
       address: "Jl. Manis Raya No. 123, Jakarta Selatan",
       phone: "0817-262-116",
       hours: "24 Jam",
@@ -77,7 +77,7 @@ export default function KontakPage() {
             Hubungi Kami
           </h1>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto animate-fade-in-up text-pretty">
-            Kami siap membantu Anda! Jangan ragu untuk menghubungi tim Kunaka Es Krim Puter kapan saja.
+            Kami siap membantu Anda! Jangan ragu untuk menghubungi tim Es Puter Mulyo Langgeng Es Krim Puter kapan saja.
           </p>
         </div>
       </section>
@@ -220,7 +220,7 @@ export default function KontakPage() {
                       allowFullScreen
                       loading="lazy"
                       referrerPolicy="no-referrer-when-downgrade"
-                      title="Lokasi Kunaka Es Krim Puter"
+                      title="Lokasi Es Puter Mulyo Langgeng Es Krim Puter"
                     ></iframe>
                   </div>
                 </CardContent>
@@ -236,7 +236,7 @@ export default function KontakPage() {
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-foreground mb-4 text-balance">Lokasi Toko Kami</h2>
             <p className="text-xl text-muted-foreground text-pretty">
-              Kunjungi toko Kunaka Es Krim Puter di Jakarta Selatan
+              Kunjungi toko Es Puter Mulyo Langgeng Es Krim Puter di Jakarta Selatan
             </p>
           </div>
 
@@ -289,7 +289,7 @@ export default function KontakPage() {
           <div className="space-y-6">
             {[
               {
-                question: "Apakah Kunaka melayani delivery?",
+                question: "Apakah Es Puter Mulyo Langgeng melayani delivery?",
                 answer:
                   "Ya, kami melayani delivery ke seluruh area Jakarta Selatan dan sekitarnya. Minimum order berlaku untuk free delivery.",
               },

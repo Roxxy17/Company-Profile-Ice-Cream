@@ -231,13 +231,13 @@ export default function HomePage() {
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
               <ScrollAnimation className="order-2 lg:order-1" animationType="slide-right">
                 <h2 className="text-4xl md:text-5xl font-bold text-gradient mb-8 text-balance">
-                  Cerita di Balik Kunaka Es Krim Puter
+                  Cerita di Balik Es Puter Mulyo Langgeng Es Krim Puter
                 </h2>
                 <p className="text-xl text-slate-600 mb-8 leading-relaxed">
-                  Kunaka Es Krim Puter berawal dari tradisi keluarga yang selalu menghadirkan es krim puter di setiap acara pernikahan. Kelezatan dan keunikan rasa es krim puter menjadi simbol kebahagiaan dan kehangatan di momen istimewa.
+                  Es Puter Mulyo Langgeng Es Krim Puter berawal dari tradisi keluarga yang selalu menghadirkan es krim puter di setiap acara pernikahan. Kelezatan dan keunikan rasa es krim puter menjadi simbol kebahagiaan dan kehangatan di momen istimewa.
                 </p>
                 <p className="text-xl text-slate-600 mb-10 leading-relaxed">
-                  Kini, Kunaka hadir untuk memeriahkan hari bahagia Anda dengan es krim puter premium, dibuat dari bahan-bahan pilihan dan resep warisan yang telah dipercaya puluhan pasangan pengantin di berbagai kota.
+                  Kini, Es Puter Mulyo Langgeng hadir untuk memeriahkan hari bahagia Anda dengan es krim puter premium, dibuat dari bahan-bahan pilihan dan resep warisan yang telah dipercaya puluhan pasangan pengantin di berbagai kota.
                 </p>
                 <Button
                   asChild
